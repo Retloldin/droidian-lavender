@@ -41,6 +41,11 @@
     - adaptation-volla-yggdrasil
     - adaptation-volla-yggdrasil-configs
 
+.xiaomi_lavender_packages:
+  packages: &xiaomi_lavender_packages
+    - adaptation-droidian-lavender
+    - adaptation-lavender-configs
+
 .xiaomi_miatoll_packages:
   packages: &xiaomi_miatoll_packages
     - adaptation-xiaomi-miatoll
@@ -150,6 +155,15 @@ volla_mimameid:
 #
 # Xiaomi
 #
+
+# Xiaomi Redmi Note 7 (lavender)
+xiaomi_lavender:
+  type: image
+  arch: arm64
+  edition: phosh
+  variant: phone
+  apilevel: 28
+  packages: *xiaomi_lavender_packages
 
 # Xiaomi Redmi Note 9S/9 Pro/9 Pro Max/M2 Pro (miatoll)
 xiaomi_miatoll:
